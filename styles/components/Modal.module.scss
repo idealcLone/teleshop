@@ -1,0 +1,28 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.modalBackdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.modalBody {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  padding: 10px 20px;
+  z-index: 12;
+  background: #fff;
+  border-radius: 5px;
+}

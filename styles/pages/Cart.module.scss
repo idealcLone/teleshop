@@ -1,0 +1,67 @@
+.container {}
+
+.ordersContainer {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title span:first-child {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title span a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #31b444;
+}
+
+.ordersList {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #77777730;
+}
+
+.total {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.commentContainer {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.commentInput {
+  background-color: #fff;
+  padding: 15px 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.commentTip {
+  padding-left: 20px;
+}
+
+.orderSuccess {
+  color: #31b444;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}

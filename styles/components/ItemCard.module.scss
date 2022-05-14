@@ -1,0 +1,87 @@
+.itemCard {
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+}
+
+.itemCardImageContainer {
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+
+.itemCardImage {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.itemCardTitle {
+  font-weight: 500;
+  flex: 1;
+}
+
+.itemCardPrice {
+  font-weight: 600;
+}
+
+.itemCardButton {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .5px;
+  background-color: #f9a818;
+}
+
+.itemCount {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f9a818;
+  color: #fff;
+  font-weight: 600;
+}
+
+.toggleCount {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+
+.toggleCount span {
+  flex: 1;
+  font-size: 40px;
+  color: #fff;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggleCount span:first-child {
+  background-color: #ea4e48;
+  padding-bottom: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.toggleCount span:last-child {
+  background-color: #f9a818;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
