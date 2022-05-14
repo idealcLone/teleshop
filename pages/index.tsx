@@ -24,18 +24,15 @@ const Home: NextPage<PropsType> = ({ data }) => {
   const initTelegramMainButton = useCallback(() => {
     const mainButton = window.Telegram.WebApp.MainButton;
     mainButton.onClick(() => {
-      router.push('/cart');
+      cartItemsCount && router.push('/cart');
     });
     mainButton.setParams({
       text: `Перейти в корзину (${cartItemsCount})`,
       color: '#f9a818',
       text_color: '#fff',
       is_active: true,
-      is_visible: false,
+      is_visible: true,
     });
-    if (cartItemsCount) {
-      mainButton.show();
-    }
   }, [cartItemsCount]);
 
   useEffect(() => {

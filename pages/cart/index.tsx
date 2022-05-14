@@ -13,7 +13,7 @@ import { Modal } from "../../components/Modal";
 const Cart: NextPage = () => {
   const router = useRouter();
 
-  const [cartItems] = useContext(CartContext);
+  const [cartItems, setCartItems] = useContext(CartContext);
   const [modalOpen, setModalOpen] = useState<boolean>(false);
 
   const totalPrice = useMemo(
@@ -40,6 +40,7 @@ const Cart: NextPage = () => {
 
   const handleModalClose = () => {
     setModalOpen(false);
+    setCartItems([]);
     router.push('/');
   };
 
@@ -50,7 +51,9 @@ const Cart: NextPage = () => {
   return (
     <>
       <Modal open={modalOpen} handleClose={handleModalClose}>
-        <div className={styles.orderSuccess}></div>
+        <div className={styles.orderSuccess}>
+          Ваша заявка успешно отправлена
+        </div>
       </Modal>
       <div className={styles.container}>
         <div className={styles.ordersContainer}>
